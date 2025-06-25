@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>精选商城 - 高品质商品列表</title>
+    <script src="./高品质商品列表_files/saved_resource"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./高品质商品列表_files/css2" rel="stylesheet">
+    
+    <!-- Tailwind 高级配置 -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E74C3C',
+                        secondary: '#3498DB',
+                        dark: '#1E293B',
+                        light: '#F8FAFC',
+                        muted: '#64748B',
+                        'primary-light': '#FDE68A',
+                        'primary-dark': '#B91C1C'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                        'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+                    },
+                    transitionProperty: {
+                        'height': 'height',
+                        'spacing': 'margin, padding',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- 自定义工具类 -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .animate-fade-in {
+                animation: fadeIn 0.5s ease-in-out;
+            }
+            .animate-slide-up {
+                animation: slideUp 0.4s ease-out;
+            }
+            .animate-pulse-subtle {
+                animation: pulseSubtle 2s infinite;
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes pulseSubtle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.visible{visibility:visible}.invisible{visibility:hidden}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-right-1{right:-0.25rem}.-top-1{top:-0.25rem}.bottom-0{bottom:0px}.bottom-6{bottom:1.5rem}.left-0{left:0px}.left-3{left:0.75rem}.right-0{right:0px}.right-3{right:0.75rem}.right-6{right:1.5rem}.top-0{top:0px}.top-1\/2{top:50%}.top-3{top:0.75rem}.z-50{z-index:50}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:0.25rem}.ml-1\.5{margin-left:0.375rem}.mr-1{margin-right:0.25rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.h-24{height:6rem}.h-5{height:1.25rem}.h-56{height:14rem}.w-24{width:6rem}.w-5{width:1.25rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-4{--tw-translate-y:1rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-l-lg{border-top-left-radius:0.5rem;border-bottom-left-radius:0.5rem}.rounded-r-lg{border-top-right-radius:0.5rem;border-bottom-right-radius:0.5rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity, 1))}.border-primary{--tw-border-opacity:1;border-color:rgb(231 76 60 / var(--tw-border-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-dark{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(231 76 60 / var(--tw-bg-opacity, 1))}.bg-primary\/10{background-color:rgb(231 76 60 / 0.1)}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(52 152 219 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-black\/60{--tw-gradient-from:rgb(0 0 0 / 0.6) var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-primary{--tw-gradient-from:#E74C3C var(--tw-gradient-from-position);--tw-gradient-to:rgb(231 76 60 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-secondary{--tw-gradient-to:#3498DB var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-1{padding-bottom:0.25rem}.pb-16{padding-bottom:4rem}.pb-8{padding-bottom:2rem}.pl-10{padding-left:2.5rem}.pl-2{padding-left:0.5rem}.pl-4{padding-left:1rem}.pr-10{padding-right:2.5rem}.pr-4{padding-right:1rem}.pt-16{padding-top:4rem}.pt-24{padding-top:6rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-inter{font-family:Inter, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[clamp\(1\.8rem\2c 4vw\2c 2\.5rem\)\]{font-size:clamp(1.8rem,4vw,2.5rem)}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-dark{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-muted{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(231 76 60 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.accent-primary{accent-color:#E74C3C}.opacity-0{opacity:0}.opacity-100{opacity:1}.shadow-card{--tw-shadow:0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.animate-fade-in {
+                animation: fadeIn 0.5s ease-in-out;
+            }.animate-slide-up {
+                animation: slideUp 0.4s ease-out;
+            }.animate-pulse-subtle {
+                animation: pulseSubtle 2s infinite;
+            }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes pulseSubtle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+        
+        .hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+        
+        .hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}
+        
+        .hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}
+        
+        .hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}
+        
+        .hover\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(231 76 60 / var(--tw-bg-opacity, 1))}
+        
+        .hover\:bg-primary-dark:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}
+        
+        .hover\:bg-primary\/20:hover{background-color:rgb(231 76 60 / 0.2)}
+        
+        .hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}
+        
+        .hover\:text-gray-400:hover{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}
+        
+        .hover\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}
+        
+        .hover\:text-primary:hover{--tw-text-opacity:1;color:rgb(231 76 60 / var(--tw-text-opacity, 1))}
+        
+        .hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}
+        
+        .hover\:shadow-card-hover:hover{--tw-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 10px 10px -5px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
+        
+        .focus\:border-primary:focus{--tw-border-opacity:1;border-color:rgb(231 76 60 / var(--tw-border-opacity, 1))}
+        
+        .focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}
+        
+        .focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
+        
+        .focus\:ring-4:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
+        
+        .focus\:ring-primary\/30:focus{--tw-ring-color:rgb(231 76 60 / 0.3)}
+        
+        .focus\:ring-primary\/50:focus{--tw-ring-color:rgb(231 76 60 / 0.5)}
+        
+        .disabled\:cursor-not-allowed:disabled{cursor:not-allowed}
+        
+        .disabled\:opacity-50:disabled{opacity:0.5}
+        
+        .group:hover .group-hover\:translate-y-0{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+        
+        .group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+        
+        .group:hover .group-hover\:opacity-100{opacity:1}
+        
+        @media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}
+        
+        @media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:inline{display:inline}.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-auto{width:auto}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}
+        
+        @media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}
+        
+        @media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}
+    </style></head>
+
+<body class="font-inter bg-gray-50 text-dark antialiased transition-colors duration-300">
+    <!-- 导航栏 - 带滚动效果 -->
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-white/95 z-50 transition-all duration-300 backdrop-blur-sm py-3 shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-shopping-bag text-primary text-2xl"></i>
+                <h1 class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">精选商城</h1>
+            </div>
+            
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">首页</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-primary font-semibold border-b-2 border-primary pb-1">商品</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">分类</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">品牌</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">关于我们</a>
+            </nav>
+            
+            <!-- 操作区 -->
+            <div class="flex items-center space-x-4">
+                <button id="search-btn" class="p-2 rounded-full hover:bg-gray-100 transition-colors duration-200 relative">
+                    <i class="fa fa-search text-gray-700"></i>
+                </button>
+                
+                <button id="cart-btn" class="p-2 rounded-full hover:bg-gray-100 transition-colors duration-200 relative">
+                    <i class="fa fa-shopping-cart text-gray-700"></i>
+                    <span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center transition-all duration-300 transform scale-100">3</span>
+                </button>
+                
+                <button id="user-btn" class="p-2 rounded-full hover:bg-gray-100 transition-colors duration-200">
+                    <i class="fa fa-user text-gray-700"></i>
+                </button>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-gray-100 transition-colors duration-200">
+                    <i class="fa fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t animate-fade-in">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="block py-2 text-gray-700 hover:text-primary transition-colors duration-200 font-medium">首页</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="block py-2 text-primary font-semibold border-l-4 border-primary pl-2">商品</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="block py-2 text-gray-700 hover:text-primary transition-colors duration-200 font-medium">分类</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="block py-2 text-gray-700 hover:text-primary transition-colors duration-200 font-medium">品牌</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="block py-2 text-gray-700 hover:text-primary transition-colors duration-200 font-medium">关于我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 搜索模态框 -->
+    <div id="search-modal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden animate-fade-in">
+        <div class="bg-white rounded-xl p-6 w-full max-w-md mx-4 shadow-card">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold">搜索商品</h3>
+                <button id="close-search" class="text-gray-500 hover:text-gray-700">
+                    <i class="fa fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="relative">
+                <input type="text" placeholder="输入商品名称、品牌或型号..." class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200">
+                <i class="fa fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+            </div>
+            <div class="mt-4 grid grid-cols-3 gap-2">
+                <button class="py-2 px-3 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors duration-200">手机</button>
+                <button class="py-2 px-3 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors duration-200">电脑</button>
+                <button class="py-2 px-3 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors duration-200">耳机</button>
+                <button class="py-2 px-3 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors duration-200">服装</button>
+                <button class="py-2 px-3 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors duration-200">鞋类</button>
+                <button class="py-2 px-3 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors duration-200">家居</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主内容区 -->
+    <main class="container mx-auto px-4 pt-24 pb-16">
+        <!-- 页面标题 -->
+        <div class="mb-8 animate-slide-up">
+            <h1 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-2">精选商品</h1>
+            <p class="text-muted max-w-2xl">探索我们精心挑选的高品质商品，每一款都经过严格筛选，为您带来卓越的购物体验</p>
+        </div>
+        
+        <!-- 筛选和排序栏 -->
+        <div class="bg-white rounded-xl p-6 shadow-sm mb-8 animate-slide-up" style="animation-delay: 0.1s">
+            <form class="flex flex-col md:flex-row md:items-center gap-6">
+                <!-- 分类筛选 -->
+                <div class="flex-1">
+                    <label for="category" class="block text-sm font-medium text-gray-700 mb-1">商品分类</label>
+                    <div class="relative">
+                        <select id="category" class="w-full pl-4 pr-10 py-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200">
+                            <option>全部商品</option>
+                            <option>电子产品</option>
+                            <option>服装鞋帽</option>
+                            <option>家居用品</option>
+                            <option>运动户外</option>
+                            <option>图书音像</option>
+                        </select>
+                        <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                            <i class="fa fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 价格筛选 -->
+                <div class="flex-1">
+                    <label for="price-range" class="block text-sm font-medium text-gray-700 mb-1">价格范围</label>
+                    <div class="flex items-center gap-4">
+                        <input type="range" id="price-range" min="0" max="10000" value="5000" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary">
+                        <span id="price-display" class="text-sm font-medium text-primary">¥3,736</span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 mt-1">
+                        <span>¥0</span>
+                        <span>¥10,000</span>
+                    </div>
+                </div>
+                
+                <!-- 排序方式 -->
+                <div class="flex-1">
+                    <label for="sort" class="block text-sm font-medium text-gray-700 mb-1">排序方式</label>
+                    <div class="relative">
+                        <select id="sort" class="w-full pl-4 pr-10 py-3 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200">
+                            <option>推荐商品</option>
+                            <option>价格从低到高</option>
+                            <option>价格从高到低</option>
+                            <option>最新上架</option>
+                            <option>销量优先</option>
+                        </select>
+                        <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                            <i class="fa fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 筛选按钮 -->
+                <div class="w-full md:w-auto">
+                    <button type="submit" class="w-full md:w-auto px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark focus:outline-none focus:ring-4 focus:ring-primary/30 transition-all duration-200 flex items-center justify-center gap-2">
+                        <i class="fa fa-filter"></i>
+                        <span>筛选</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- 商品列表 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="product-grid">
+            <!-- 商品卡片 1 - 带动画效果 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style="animation-delay: 0.2s">
+                <div class="relative group">
+                    <img src="./高品质商品列表_files/428-600x400.jpg" alt="无线蓝牙耳机" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2.5 py-1 rounded-md animate-pulse-subtle">热卖</div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white transition-colors duration-200 opacity-0 group-hover:opacity-100">
+                        <i class="fa fa-heart-o text-gray-600"></i>
+                    </button>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-full py-2 bg-white text-primary font-medium rounded-lg text-sm transition-all duration-200 transform translate-y-4 group-hover:translate-y-0">
+                            <i class="fa fa-eye mr-1"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center text-yellow-400 text-xs mb-1.5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span class="text-gray-500 ml-1.5">(128)</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1.5 line-clamp-2">高级无线蓝牙耳机 - 主动降噪版</h3>
+                    <p class="text-muted text-sm mb-3 line-clamp-2">HiFi级音质，双麦克风主动降噪，长达30小时续航</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-primary font-bold text-lg">¥299</span>
+                        </div>
+                        <button class="p-2.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-200 transform hover:scale-110">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 商品卡片 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style="animation-delay: 0.3s">
+                <div class="relative group">
+                    <img src="./高品质商品列表_files/101-600x400.jpg" alt="休闲牛仔裤" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 left-3 bg-secondary text-white text-xs font-bold px-2.5 py-1 rounded-md">新品</div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white transition-colors duration-200 opacity-0 group-hover:opacity-100">
+                        <i class="fa fa-heart-o text-gray-600"></i>
+                    </button>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-full py-2 bg-white text-primary font-medium rounded-lg text-sm transition-all duration-200 transform translate-y-4 group-hover:translate-y-0">
+                            <i class="fa fa-eye mr-1"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center text-yellow-400 text-xs mb-1.5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <span class="text-gray-500 ml-1.5">(86)</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1.5 line-clamp-2">时尚休闲牛仔裤 - 修身显瘦款</h3>
+                    <p class="text-muted text-sm mb-3 line-clamp-2">高弹力舒适面料，复古做旧工艺，多色可选</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-primary font-bold text-lg">¥199</span>
+                        </div>
+                        <button class="p-2.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-200 transform hover:scale-110">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 商品卡片 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style="animation-delay: 0.4s">
+                <div class="relative group">
+                    <img src="./高品质商品列表_files/199-600x400.jpg" alt="智能台灯" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white transition-colors duration-200 opacity-0 group-hover:opacity-100">
+                        <i class="fa fa-heart-o text-gray-600"></i>
+                    </button>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-full py-2 bg-white text-primary font-medium rounded-lg text-sm transition-all duration-200 transform translate-y-4 group-hover:translate-y-0">
+                            <i class="fa fa-eye mr-1"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center text-yellow-400 text-xs mb-1.5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="text-gray-500 ml-1.5">(214)</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1.5 line-clamp-2">智能调光护眼台灯 - 升级版</h3>
+                    <p class="text-muted text-sm mb-3 line-clamp-2">AI智能感光，无级调光调色，手机APP远程控制</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-primary font-bold text-lg">¥159</span>
+                        </div>
+                        <button class="p-2.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-200 transform hover:scale-110">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 商品卡片 4 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style="animation-delay: 0.5s">
+                <div class="relative group">
+                    <img src="./高品质商品列表_files/133-600x400.jpg" alt="运动背包" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2.5 py-1 rounded-md animate-pulse-subtle">促销</div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white transition-colors duration-200 opacity-0 group-hover:opacity-100">
+                        <i class="fa fa-heart-o text-gray-600"></i>
+                    </button>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-full py-2 bg-white text-primary font-medium rounded-lg text-sm transition-all duration-200 transform translate-y-4 group-hover:translate-y-0">
+                            <i class="fa fa-eye mr-1"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center text-yellow-400 text-xs mb-1.5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <span class="text-gray-500 ml-1.5">(42)</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1.5 line-clamp-2">大容量运动背包 - 防水款</h3>
+                    <p class="text-muted text-sm mb-3 line-clamp-2">45L超大容量，防水耐磨面料，独立鞋仓设计</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-primary font-bold text-lg">¥229</span>
+                            <span class="text-gray-400 text-sm line-through ml-1">¥299</span>
+                        </div>
+                        <button class="p-2.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-200 transform hover:scale-110">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 商品卡片 5 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style="animation-delay: 0.6s">
+                <div class="relative group">
+                    <img src="./高品质商品列表_files/228-600x400.jpg" alt="编程书籍" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white transition-colors duration-200 opacity-0 group-hover:opacity-100">
+                        <i class="fa fa-heart-o text-gray-600"></i>
+                    </button>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-full py-2 bg-white text-primary font-medium rounded-lg text-sm transition-all duration-200 transform translate-y-4 group-hover:translate-y-0">
+                            <i class="fa fa-eye mr-1"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center text-yellow-400 text-xs mb-1.5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span class="text-gray-500 ml-1.5">(176)</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1.5 line-clamp-2">Python编程实战指南 - 第2版</h3>
+                    <p class="text-muted text-sm mb-3 line-clamp-2">从入门到精通，包含10+实战项目，附视频教程</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-primary font-bold text-lg">¥89</span>
+                        </div>
+                        <button class="p-2.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-200 transform hover:scale-110">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 商品卡片 6 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style="animation-delay: 0.7s">
+                <div class="relative group">
+                    <img src="./高品质商品列表_files/315-600x400.jpg" alt="移动电源" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 left-3 bg-secondary text-white text-xs font-bold px-2.5 py-1 rounded-md">新品</div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white transition-colors duration-200 opacity-0 group-hover:opacity-100">
+                        <i class="fa fa-heart-o text-gray-600"></i>
+                    </button>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-full py-2 bg-white text-primary font-medium rounded-lg text-sm transition-all duration-200 transform translate-y-4 group-hover:translate-y-0">
+                            <i class="fa fa-eye mr-1"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center text-yellow-400 text-xs mb-1.5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <span class="text-gray-500 ml-1.5">(59)</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1.5 line-clamp-2">20000mAh大容量移动电源 - 快充版</h3>
+                    <p class="text-muted text-sm mb-3 line-clamp-2">PD 65W快充，双向快充，自带双线，数显电量</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-primary font-bold text-lg">¥129</span>
+                        </div>
+                        <button class="p-2.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-200 transform hover:scale-110">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 商品卡片 7 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style="animation-delay: 0.8s">
+                <div class="relative group">
+                    <img src="./高品质商品列表_files/778-600x400.jpg" alt="智能手表" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2.5 py-1 rounded-md animate-pulse-subtle">热卖</div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white transition-colors duration-200 opacity-0 group-hover:opacity-100">
+                        <i class="fa fa-heart-o text-gray-600"></i>
+                    </button>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-full py-2 bg-white text-primary font-medium rounded-lg text-sm transition-all duration-200 transform translate-y-4 group-hover:translate-y-0">
+                            <i class="fa fa-eye mr-1"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center text-yellow-400 text-xs mb-1.5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span class="text-gray-500 ml-1.5">(321)</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1.5 line-clamp-2">智能运动手表 - 多功能版</h3>
+                    <p class="text-muted text-sm mb-3 line-clamp-2">100+运动模式，心率监测，血氧检测，两周续航</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-primary font-bold text-lg">¥399</span>
+                        </div>
+                        <button class="p-2.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-200 transform hover:scale-110">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 商品卡片 8 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style="animation-delay: 0.9s">
+                <div class="relative group">
+                    <img src="./高品质商品列表_files/683-600x400.jpg" alt="瑜伽垫" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2.5 py-1 rounded-md">环保</div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white transition-colors duration-200 opacity-0 group-hover:opacity-100">
+                        <i class="fa fa-heart-o text-gray-600"></i>
+                    </button>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="w-full py-2 bg-white text-primary font-medium rounded-lg text-sm transition-all duration-200 transform translate-y-4 group-hover:translate-y-0">
+                            <i class="fa fa-eye mr-1"></i> 查看详情
+                        </button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center text-yellow-400 text-xs mb-1.5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="text-gray-500 ml-1.5">(156)</span>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1.5 line-clamp-2">天然橡胶瑜伽垫 - 防滑加厚</h3>
+                    <p class="text-muted text-sm mb-3 line-clamp-2">10mm加厚设计，天然环保材质，防滑防水易清洁</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-primary font-bold text-lg">¥129</span>
+                        </div>
+                        <button class="p-2.5 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-200 transform hover:scale-110">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 加载更多 -->
+        <div class="mt-12 text-center animate-slide-up" style="animation-delay: 1s">
+            <button id="load-more" class="px-8 py-3 bg-white border border-primary text-primary font-medium rounded-lg hover:bg-primary hover:text-white transition-colors duration-200 flex items-center justify-center gap-2 mx-auto"><span>加载更多商品</span><i class="fa fa-refresh"></i></button>
+        </div>
+        
+        <!-- 分页控件 -->
+        <div class="mt-12 flex justify-center animate-slide-up" style="animation-delay: 1.1s">
+            <nav class="inline-flex rounded-lg shadow-sm">
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="px-4 py-3 rounded-l-lg border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors duration-200 flex items-center gap-1 disabled:opacity-50 disabled:cursor-not-allowed" disabled="">
+                    <i class="fa fa-chevron-left"></i>
+                    <span class="hidden md:inline">上一页</span>
+                </a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="px-4 py-3 border-t border-b border-gray-300 bg-primary text-sm font-medium text-white">1</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="px-4 py-3 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200">2</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="px-4 py-3 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200">3</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="px-4 py-3 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200">4</a>
+                <span class="px-4 py-3 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-700">...</span>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="px-4 py-3 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200">12</a>
+                <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="px-4 py-3 rounded-r-lg border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200 flex items-center gap-1">
+                    <span class="hidden md:inline">下一页</span>
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+            </nav>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="fa fa-shopping-bag text-primary text-2xl"></i>
+                        <h2 class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">精选商城</h2>
+                    </div>
+                    <p class="text-gray-400 mb-6">致力于为您提供高品质的商品和卓越的购物体验，让每一次购物都充满惊喜。</p>
+                    <div class="flex space-x-4">
+                        <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">
+                            <i class="fa fa-weibo text-xl"></i>
+                        </a>
+                        <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">
+                            <i class="fa fa-wechat text-xl"></i>
+                        </a>
+                        <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">
+                            <i class="fa fa-instagram text-xl"></i>
+                        </a>
+                        <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">
+                            <i class="fa fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">快速链接</h3>
+                    <ul class="space-y-3">
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">首页</a></li>
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">全部商品</a></li>
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">新品上市</a></li>
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">热卖商品</a></li>
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">促销活动</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">客户服务</h3>
+                    <ul class="space-y-3">
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">帮助中心</a></li>
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">联系我们</a></li>
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">售后服务</a></li>
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">配送说明</a></li>
+                        <li><a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-400 hover:text-primary transition-colors duration-200">隐私政策</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">订阅通讯</h3>
+                    <p class="text-gray-400 mb-4">订阅我们的电子邮件，获取最新产品和促销信息</p>
+                    <form class="mb-4">
+                        <div class="flex">
+                            <input type="email" placeholder="您的邮箱地址" class="flex-1 px-4 py-2 rounded-l-lg focus:outline-none text-dark">
+                            <button type="submit" class="px-4 py-2 bg-primary text-white rounded-r-lg hover:bg-primary-dark transition-colors duration-200">
+                                <i class="fa fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <p class="text-gray-400 text-sm">关注我们的公众号</p>
+                    <div class="mt-2 bg-white p-2 inline-block rounded-lg">
+                        <img src="./高品质商品列表_files/846-100x100.jpg" alt="公众号二维码" class="w-24 h-24">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2023 精选商城. 保留所有权利.</p>
+                    <div class="flex space-x-6">
+                        <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-200">使用条款</a>
+                        <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-200">隐私政策</a>
+                        <a href="file:///D:/web/HTML/%E4%BD%9C%E4%B8%9A.html#" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-200">Cookie政策</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 p-3 bg-primary text-white rounded-full shadow-lg transition-all duration-300 hover:bg-primary-dark opacity-0 invisible">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2', 'shadow-md');
+                navbar.classList.remove('py-3', 'shadow-sm');
+                
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                navbar.classList.add('py-3', 'shadow-sm');
+                navbar.classList.remove('py-2', 'shadow-md');
+                
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        // 移动端菜单切换
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 搜索模态框
+        const searchBtn = document.getElementById('search-btn');
+        const searchModal = document.getElementById('search-modal');
+        const closeSearch = document.getElementById('close-search');
+        
+        function openSearchModal() {
+            searchModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeSearchModal() {
+            searchModal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+        
+        searchBtn.addEventListener('click', openSearchModal);
+        closeSearch.addEventListener('click', closeSearchModal);
+        
+        searchModal.addEventListener('click', function(e) {
+            if (e.target === searchModal) {
+                closeSearchModal();
+            }
+        });
+        
+        // 价格滑块值显示
+        const priceRange = document.getElementById('price-range');
+        const priceDisplay = document.getElementById('price-display');
+        
+        priceRange.addEventListener('input', function() {
+            priceDisplay.textContent = '¥' + parseInt(this.value).toLocaleString();
+            
+            // 滑块值变化时的微动画
+            priceDisplay.classList.add('scale-110');
+            setTimeout(() => {
+                priceDisplay.classList.remove('scale-110');
+            }, 200);
+        });
+        
+        // 加载更多按钮
+        const loadMoreBtn = document.getElementById('load-more');
+        
+        loadMoreBtn.addEventListener('click', function() {
+            // 显示加载状态
+            this.innerHTML = '<i class="fa fa-spinner fa-spin"></i> 加载中...';
+            this.disabled = true;
+            
+            // 模拟加载延迟
+            setTimeout(() => {
+                this.innerHTML = '<span>加载更多商品</span><i class="fa fa-refresh"></i>';
+                this.disabled = false;
+                
+                // 这里可以添加实际的加载更多逻辑
+                alert('已加载全部商品');
+            }, 1500);
+        });
+        
+        // 回到顶部功能
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动端菜单（如果打开）
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // 购物车数量动画
+        const cartBtn = document.getElementById('cart-btn');
+        const cartBadge = cartBtn.querySelector('span');
+        
+        cartBtn.addEventListener('click', function() {
+            // 购物车按钮点击动画
+            cartBtn.classList.add('scale-110');
+            setTimeout(() => {
+                cartBtn.classList.remove('scale-110');
+            }, 200);
+            
+            // 购物车数量增加动画
+            const originalCount = parseInt(cartBadge.textContent);
+            cartBadge.textContent = originalCount + 1;
+            cartBadge.classList.add('scale-150');
+            setTimeout(() => {
+                cartBadge.classList.remove('scale-150');
+            }, 300);
+        });
+    </script>
+
+</body></html>
